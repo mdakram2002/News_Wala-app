@@ -13,7 +13,7 @@ export default class News extends Component {
     };
     async componentDidMount() {
         // console.log("cdm");
-        if (this.state.page - 1 > Math.ceil(this.state.totalResults / 20)) {
+        if (this.state.page - 1 > Math.ceil(this.state.totalResults / this.props.pageSize)) {
 
         } else {
             let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5cde1131cc3a44e8980755af019e7e3b&page=1&pageSize=
