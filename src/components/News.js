@@ -72,7 +72,7 @@ export default class News extends Component {
                 </div>
                 <div className="container2 my-3 d-flex justify-content-between">
                     <button type="button" className="btn btn-dark" disabled={this.state.page <= 1} onClick={this.handelPrevClick}> &#8249; preveiws</button>
-                    <button type="button" className="btn btn-dark" disabled={this.state.page + 1 > Math.ceil(this.state.totalResults / 20)} onClick={this.handelNextClick}>Next &#8250;</button>
+                    <button type="button" className="btn btn-dark" disabled={this.state.page + 1 > Math.ceil(this.state.totalResults / this.state.pageSize)} onClick={this.handelNextClick}>Next &#8250;</button>
                 </div>
             </div>
         )
