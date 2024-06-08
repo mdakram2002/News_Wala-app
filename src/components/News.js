@@ -17,7 +17,7 @@ export default class News extends Component {
 
     constructor() {
         super();
-        // console.log("Hello i'am constructor from news componenets");
+        console.log("Hello i'am constructor from news componenets");
         this.state = {
             articles: this.articles,
             loading: false,
